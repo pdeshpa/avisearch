@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  common_english_name: MyString
+  scientific_name: MyString
+  family: MyString
+  order: MyString
+  marathi_name: MyString
+  sanskrit_name: MyString
+  sanskrit_name_description: MyText
+  scientific_name_etymology: MyText
+  iucn_status: MyString
+
+two:
+  common_english_name: MyString
+  scientific_name: MyString
+  family: MyString
+  order: MyString
+  marathi_name: MyString
+  sanskrit_name: MyString
+  sanskrit_name_description: MyText
+  scientific_name_etymology: MyText
+  iucn_status: MyString

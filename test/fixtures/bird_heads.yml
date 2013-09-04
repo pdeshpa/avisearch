@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bill_shape: MyString
+  bill_size: MyString
+  bill_color: MyString
+  eye_color: MyString
+  head_pattern: MyString
+  crown_color: MyString
+  forehead_color: MyString
+  nape_color: MyString
+  throat_color: MyString
+  cere_color: MyString
+
+two:
+  bill_shape: MyString
+  bill_size: MyString
+  bill_color: MyString
+  eye_color: MyString
+  head_pattern: MyString
+  crown_color: MyString
+  forehead_color: MyString
+  nape_color: MyString
+  throat_color: MyString
+  cere_color: MyString

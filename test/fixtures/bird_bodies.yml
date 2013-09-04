@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  shape: MyString
+  size: MyString
+  color_primary: MyString
+  color_secondary: MyString
+  under_part_color: MyString
+  upper_part_color: MyString
+  back_pattern: MyString
+  belly_pattern: MyString
+  breast_pattern: MyString
+  bird_id: 1
+
+two:
+  shape: MyString
+  size: MyString
+  color_primary: MyString
+  color_secondary: MyString
+  under_part_color: MyString
+  upper_part_color: MyString
+  back_pattern: MyString
+  belly_pattern: MyString
+  breast_pattern: MyString
+  bird_id: 1

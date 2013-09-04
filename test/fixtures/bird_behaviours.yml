@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  general: MyText
+  range_and_habitat: MyText
+  breeding_and_nesting: MyText
+  foraging_and_feeding: MyText
+  vocalization: MyText
+  similar_species: MyText
+  breeding_location: MyText
+  breeding_type: MyString
+  egg_color: MyString
+  number_of_eggs: 1
+  incubation_days: 1
+  egg_incubator: MyString
+  nesting_material: MyString
+  migration: MyString
+  bird_id: 1
+
+two:
+  general: MyText
+  range_and_habitat: MyText
+  breeding_and_nesting: MyText
+  foraging_and_feeding: MyText
+  vocalization: MyText
+  similar_species: MyText
+  breeding_location: MyText
+  breeding_type: MyString
+  egg_color: MyString
+  number_of_eggs: 1
+  incubation_days: 1
+  egg_incubator: MyString
+  nesting_material: MyString
+  migration: MyString
+  bird_id: 1

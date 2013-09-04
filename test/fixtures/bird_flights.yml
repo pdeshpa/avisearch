@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  flight_pattern: MyString
+  wing_span: MyString
+  wing_shape: MyString
+  tail_shape: MyString
+  tail_pattern: MyString
+  bird_id: 1
+
+two:
+  flight_pattern: MyString
+  wing_span: MyString
+  wing_shape: MyString
+  tail_shape: MyString
+  tail_pattern: MyString
+  bird_id: 1

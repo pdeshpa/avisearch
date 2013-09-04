@@ -1,0 +1,43 @@
+<h1>Listing birds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Common english name</th>
+      <th>Scientific name</th>
+      <th>Family</th>
+      <th>Order</th>
+      <th>Marathi name</th>
+      <th>Sanskrit name</th>
+      <th>Sanskrit name description</th>
+      <th>Scientific name etymology</th>
+      <th>Iucn status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @birds.each do |bird| %>
+      <tr>
+        <td><%= bird.common_english_name %></td>
+        <td><%= bird.scientific_name %></td>
+        <td><%= bird.family %></td>
+        <td><%= bird.order %></td>
+        <td><%= bird.marathi_name %></td>
+        <td><%= bird.sanskrit_name %></td>
+        <td><%= bird.sanskrit_name_description %></td>
+        <td><%= bird.scientific_name_etymology %></td>
+        <td><%= bird.iucn_status %></td>
+        <td><%= link_to 'Show', bird %></td>
+        <td><%= link_to 'Edit', edit_bird_path(bird) %></td>
+        <td><%= link_to 'Destroy', bird, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bird', new_bird_path %>

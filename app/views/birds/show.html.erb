@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Common english name:</strong>
+  <%= @bird.common_english_name %>
+</p>
+
+<p>
+  <strong>Scientific name:</strong>
+  <%= @bird.scientific_name %>
+</p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @bird.family %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @bird.order %>
+</p>
+
+<p>
+  <strong>Marathi name:</strong>
+  <%= @bird.marathi_name %>
+</p>
+
+<p>
+  <strong>Sanskrit name:</strong>
+  <%= @bird.sanskrit_name %>
+</p>
+
+<p>
+  <strong>Sanskrit name description:</strong>
+  <%= @bird.sanskrit_name_description %>
+</p>
+
+<p>
+  <strong>Scientific name etymology:</strong>
+  <%= @bird.scientific_name_etymology %>
+</p>
+
+<p>
+  <strong>Iucn status:</strong>
+  <%= @bird.iucn_status %>
+</p>
+
+<%= link_to 'Edit', edit_bird_path(@bird) %> |
+<%= link_to 'Back', birds_path %>
