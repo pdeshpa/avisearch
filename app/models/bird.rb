@@ -9,4 +9,5 @@ class Bird < ActiveRecord::Base
 		:sanskrit_name, :sanskrit_name_description, :scientific_name_etymology, :iucn_status
 
 	validates :common_english_name, :scientific_name, presence: true
+	validates :common_english_name, :scientific_name, uniqueness: true
 end

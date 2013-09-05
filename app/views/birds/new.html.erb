@@ -1,5 +1,22 @@
 <h1>New bird</h1>
+<%= form_for(@bird) do |f| %>
+  <% if @bird.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bird.errors.count, "error") %> prohibited this bird from being saved:</h2>
 
-<%= render 'form' %>
+      <ul>
+      <% @bird.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<%= render 'basic_form', f: f  %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Back', birds_path %>

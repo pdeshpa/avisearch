@@ -1,0 +1,13 @@
+<% 
+
+	properties = ['shape', 'size', 'color_primary', 'color_secondary', 'under_part_color', 'upper_part_color',
+		'back_pattern', 'breast_pattern', 'belly_pattern']
+
+ %>
+
+<%properties.each do |property|%>
+	<p>
+	  <strong><%=property.titleize%>:</strong>
+	  <%= best_in_place @bird.bird_body, property.to_sym %>
+	</p>
+<%end%>

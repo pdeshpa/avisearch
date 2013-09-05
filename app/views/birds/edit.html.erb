@@ -1,6 +1,45 @@
-<h1>Editing bird</h1>
+<h1>Edit bird data: <%=@bird.common_english_name%></h1>
 
-<%= render 'form' %>
+<%= form_for(@bird) do |f| %>
+  <% if @bird.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bird.errors.count, "error") %> prohibited this bird from being saved:</h2>
+
+      <ul>
+      <% @bird.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Basic</a></li>
+    <li><a href="#tab2" data-toggle="tab">Body</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p><%= render 'basic_form', f: f %></p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p><%= render 'details_form', f: f  %></p>
+    </div>
+  </div>
+</div>
+
+	<div class="actions btn btn-green">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
 
 <%= link_to 'Show', @bird %> |
 <%= link_to 'Back', birds_path %>

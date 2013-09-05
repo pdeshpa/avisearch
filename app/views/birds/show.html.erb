@@ -1,49 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Basic</a></li>
+    <li><a href="#tab2" data-toggle="tab">Body</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p><%= render 'basic'%></p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p><%= render 'body'%></p>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Common english name:</strong>
-  <%= @bird.common_english_name %>
-</p>
 
-<p>
-  <strong>Scientific name:</strong>
-  <%= @bird.scientific_name %>
-</p>
-
-<p>
-  <strong>Family:</strong>
-  <%= @bird.family %>
-</p>
-
-<p>
-  <strong>Order:</strong>
-  <%= @bird.order %>
-</p>
-
-<p>
-  <strong>Marathi name:</strong>
-  <%= @bird.marathi_name %>
-</p>
-
-<p>
-  <strong>Sanskrit name:</strong>
-  <%= @bird.sanskrit_name %>
-</p>
-
-<p>
-  <strong>Sanskrit name description:</strong>
-  <%= @bird.sanskrit_name_description %>
-</p>
-
-<p>
-  <strong>Scientific name etymology:</strong>
-  <%= @bird.scientific_name_etymology %>
-</p>
-
-<p>
-  <strong>Iucn status:</strong>
-  <%= @bird.iucn_status %>
-</p>
 
 <%= link_to 'Edit', edit_bird_path(@bird) %> |
 <%= link_to 'Back', birds_path %>

@@ -1,16 +1,14 @@
-<h1>Listing birds</h1>
+<%= link_to 'New Bird', new_bird_path %>
 
-<table>
+<br>
+
+<table class='table  table-bordered table-hover tablesorter' id='brdTable'>
   <thead>
     <tr>
       <th>Common english name</th>
       <th>Scientific name</th>
       <th>Family</th>
       <th>Order</th>
-      <th>Marathi name</th>
-      <th>Sanskrit name</th>
-      <th>Sanskrit name description</th>
-      <th>Scientific name etymology</th>
       <th>Iucn status</th>
       <th></th>
       <th></th>
@@ -25,10 +23,6 @@
         <td><%= bird.scientific_name %></td>
         <td><%= bird.family %></td>
         <td><%= bird.order %></td>
-        <td><%= bird.marathi_name %></td>
-        <td><%= bird.sanskrit_name %></td>
-        <td><%= bird.sanskrit_name_description %></td>
-        <td><%= bird.scientific_name_etymology %></td>
         <td><%= bird.iucn_status %></td>
         <td><%= link_to 'Show', bird %></td>
         <td><%= link_to 'Edit', edit_bird_path(bird) %></td>
@@ -40,4 +34,3 @@
 
 <br>
 
-<%= link_to 'New Bird', new_bird_path %>

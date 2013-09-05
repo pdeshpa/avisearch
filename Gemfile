@@ -2,12 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'pg'
-
+gem 'thin'
 
 gem 'protected_attributes'
 gem 'rails-observers'
 gem 'activeresource', :require => 'active_resource'
 gem "spreadsheet"
+gem 'best_in_place', github: "bernat/best_in_place"
 
 
 gem 'sass-rails', '~> 4.0.0'
