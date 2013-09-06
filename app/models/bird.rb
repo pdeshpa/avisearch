@@ -10,4 +10,23 @@ class Bird < ActiveRecord::Base
 
 	validates :common_english_name, :scientific_name, presence: true
 	validates :common_english_name, :scientific_name, uniqueness: true
+
+
+
+	searchable do
+		text :common_english_name
+		text :scientific_name
+		string :family
+		string :order 
+	end
+
+
+	def self.basic_search(options)
+		Bird.search do
+
+			fulltext options[:name], fields: [:common_english_name, :scientific_name] if options[:name].present?
+
+		end
+	end
+
 end

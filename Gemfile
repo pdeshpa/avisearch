@@ -9,6 +9,8 @@ gem 'rails-observers'
 gem 'activeresource', :require => 'active_resource'
 gem "spreadsheet"
 gem 'best_in_place', github: "bernat/best_in_place"
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 
 gem 'sass-rails', '~> 4.0.0'
