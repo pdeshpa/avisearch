@@ -2,6 +2,9 @@ Avisearch::Application.routes.draw do
   resources :birds
   resources :bird_bodies
 
+  match '/searches' => "searches#index", as: 'searches', via: [:get, :post]
+
+  root "searches#index"
   
 
   # The priority is based upon order of creation: first created -> highest priority.

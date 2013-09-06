@@ -1,0 +1,44 @@
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Search by name</a></li>
+    <li><a href="#tab2" data-toggle="tab">Search by body attributes</a></li>
+    <li><a href="#tab3" data-toggle="tab">Search by head</a></li>
+    <li><a href="#tab4" data-toggle="tab">Search by patterns</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p><%= render 'by_name'%></p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+<% if @results.present? %>
+  <table class='table  table-bordered table-hover tablesorter' id='brdTable'>
+    <thead>
+      <tr>
+        <th>Common english name</th>
+        <th>Scientific name</th>
+        <th>Family</th>
+        <th>Order</th>
+        <th>Iucn status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @results.each do |bird| %>
+        <tr>
+          <td><%= bird.common_english_name %></td>
+          <td><%= bird.scientific_name %></td>
+          <td><%= bird.family %></td>
+          <td><%= bird.order %></td>
+          <td><%= bird.iucn_status %></td>
+          <td><%= link_to 'Show', bird %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%end%>
