@@ -11,48 +11,48 @@ namespace :db do
         puts "Feeding information for: #{row[1]}"
         new_bird = Bird.create(
             :common_english_name => row[1], 
-            :scientific_name => row[1], 
-            :family => row[2], 
-            :order => row[3], 
-            :marathi_name => row[4],
-            :sanskrit_name => row[5],  
-            :iucn_status => row[8]
+            :scientific_name => row[2], 
+            :family => row[3], 
+            :order => row[4], 
+            :marathi_name => row[5],
+            :sanskrit_name => row[6],  
+            :iucn_status => row[9]
           )
 
         new_bird.create_bird_body(
-            :shape => row[9], 
-            :size => row[10], 
-            :color_primary => row[11], 
-            :color_secondary => row[12], 
-            :under_part_color => row[13], 
-            :upper_part_color => row[14],
-            :back_pattern => row[15], 
-            :belly_pattern => row[16], 
-            :breast_pattern => row[17]
+            :shape => row[10], 
+            :size => row[11], 
+            :color_primary => row[12], 
+            :color_secondary => row[13], 
+            :under_part_color => row[14], 
+            :upper_part_color => row[15],
+            :back_pattern => row[16], 
+            :belly_pattern => row[17], 
+            :breast_pattern => row[18]
           )
 
         new_bird.create_bird_head(
-            :bill_shape => row[18], 
-            :bill_size => row[19], 
-            :bill_color => row[20],
-            :eye_color => row[21], 
-            :head_pattern => row[22], 
-            :crown_color => row[23], 
-            :forehead_color => row[24],
-            :nape_color => row[25], 
-            :throat_color => row[26], 
-            :cere_color => row[27]
+            :bill_shape => row[19], 
+            :bill_size => row[20], 
+            :bill_color => row[21],
+            :eye_color => row[22], 
+            :head_pattern => row[23], 
+            :crown_color => row[24], 
+            :forehead_color => row[25],
+            :nape_color => row[26], 
+            :throat_color => row[27], 
+            :cere_color => row[28]
           )
 
         new_bird.create_bird_flight(
-            :flight_pattern => row[28], 
-            :wing_span => row[30], 
-            :wing_shape => row[31], 
-            :tail_shape => row[32], 
-            :tail_pattern => row[33],
-            :upper_tail => row[34], 
-            :under_tail => row[35], 
-            :leg_color => row[36]
+            :flight_pattern => row[29], 
+            :wing_span => row[31], 
+            :wing_shape => row[32], 
+            :tail_shape => row[33], 
+            :tail_pattern => row[34],
+            :upper_tail => row[35], 
+            :under_tail => row[36], 
+            :leg_color => row[37]
           )
       end
       puts 'Done.'
